@@ -15,8 +15,21 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="centerImage" translatesAutoresizingMaskIntoConstraints="NO" id="hsg-8a-HPo">
+                                <rect key="frame" x="76.666666666666686" y="306" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="5bc-sh-uoP"/>
+                                    <constraint firstAttribute="width" constant="240" id="ftc-TT-C6w"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hsg-8a-HPo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Lxk-yz-UeK"/>
+                            <constraint firstItem="hsg-8a-HPo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ySD-Z7-zjC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GxY-fi-p7J"/>
                 </viewController>
@@ -44,6 +57,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="centerImage" width="500" height="500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

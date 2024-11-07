@@ -147,27 +147,6 @@ struct Doc: Codable {
 enum TypeEnum: String, Codable {
     case work = "work"
 }
-struct BookDoc: Codable {
-    let title: String
-    let authorName: [String]?
-    let coverI: Int?
-    let ratingsAverage: Double?
-    let ratingsCount: Int?
-    let genre: [String]?
-    let firstPublishYear: Int?
-    let description: String?
-    
-    enum CodingKeys: String, CodingKey {
-        case title
-        case authorName = "author_name"
-        case coverI = "cover_i"
-        case ratingsAverage = "ratings_average"
-        case ratingsCount = "ratings_count"
-        case genre = "subject"
-        case firstPublishYear = "first_publish_year"
-        case description = "description"
-    }
-}
 
 struct Book: Codable {
     let title: String
