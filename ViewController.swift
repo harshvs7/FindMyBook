@@ -13,6 +13,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let vc = HomeViewController()
         self.navigationController?.pushViewController(vc, animated: true)
+        
     }
 
 
